@@ -1,0 +1,51 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Hausgeist merkt sich, wann die Familienmitglieder oder Hausbewohner an den verschiedenen Wochentagen nach Hause kommen.",
+          "examplePhrases": [
+            "Alexa starte Hausgeist.",
+            "Alexa sage Hausgeist dass Hannes am Montag um 14 Uhr nach Hause kommt.",
+            "Alexa frage Hausgeist wann kommt Hannes montags nach Hause."
+          ],
+          "keywords": [
+            "Familie",
+            "Haus",
+            "Information",
+            "Planung"
+          ],
+          "name": "Hausgeist",
+          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.122bf867-9d78-4d8f-a0ad-d6d816f4f137/images/eyJkIjoiQ1g0dHF3S3R4NjRJRXV1Y2psZHBTeUhXVmtpaG9mTlBiTXhCZmlxbGJjZGxjSTRyWEwyTWt4WC9DQi9WM3RDSUlNU2d5czNQNkxLZFlXN3M4RGl3UUozQ3JIRTByWHVuVnF0VHc4Rkp6dEg4RGNYWDhuT1hBYUd2djRkZElTVlIiLCJpdiI6InhvN2JoQ29PZ1hOdEJ0dXNnVng2S1E9PSIsInYiOjF9",
+          "description": "Du kannst Hausgeist fragen, wann ein Familienmitglied oder Hausbewohner an einem Wochentag nach Haus kommt. Wenn Hausgeist die Frage noch nicht beantworten kann dann fragt es dich und merkt sich deine Antwort.",
+          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.122bf867-9d78-4d8f-a0ad-d6d816f4f137/images/eyJkIjoiMUVLQ3hFWmF4SER1VW5La0M5Zm5LTFkvMEtUZU1UaTRqeDRscm02bk9aWU1TQ013QURVNzZnc1VxQlRMNDFhWXdnVlNHcjE3c2VOVzBCeVA1RWE5SEdZSVF5eFpic3J0dVVZazJkTkp6QzhyMFVuVmpsejRHNG9DUDdkUTBzTEJiTG5uVVhQNjhBOUJtVmpKQzluR1VBPT0iLCJpdiI6ImRTenB4cmhUYy94cUdweFZQL1Q1N3c9PSIsInYiOjF9"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Zur Verwendung des Skills sind keine Vorraussetzungen notwendig.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:049141960330:function:HausgeistFunction"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "de-DE": {
+          "termsOfUseUrl": "",
+          "privacyPolicyUrl": ""
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

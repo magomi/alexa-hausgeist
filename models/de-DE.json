@@ -1,0 +1,128 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hausgeist",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "FrageIntent",
+          "slots": [
+            {
+              "name": "person",
+              "type": "AMAZON.DE_FIRST_NAME"
+            },
+            {
+              "name": "day",
+              "type": "DAY_OF_WEEK"
+            }
+          ],
+          "samples": [
+            "wann kommt {person} am {day} nach hause",
+            "wann kommt {person} {day} nach hause",
+            "wann {person} am {day} nach hause kommt",
+            "wann {person} {day} nach hause kommt"
+          ]
+        },
+        {
+          "name": "SageIntent",
+          "slots": [
+            {
+              "name": "person",
+              "type": "AMAZON.DE_FIRST_NAME"
+            },
+            {
+              "name": "day",
+              "type": "DAY_OF_WEEK"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "{person} kommt am {day} um {time} nach hause",
+            "{person} kommt {day} um {time} nach hause",
+            "dass {person} am {day} um {time} nach hause kommt",
+            "dass {person} {day} um {time} nach hause kommt"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "montag",
+                "synonyms": [
+                  "montags"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dienstag",
+                "synonyms": [
+                  "dienstags"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mittwoch",
+                "synonyms": [
+                  "mittwochs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "donnerstag",
+                "synonyms": [
+                  "donnerstags"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "freitag",
+                "synonyms": [
+                  "freitags"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "samstag",
+                "synonyms": [
+                  "samstags",
+                  "sonnabend",
+                  "sonnabends"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sonntag",
+                "synonyms": [
+                  "sonntags"
+                ]
+              }
+            }
+          ],
+          "name": "DAY_OF_WEEK"
+        }
+      ]
+    }
+  }
+}
